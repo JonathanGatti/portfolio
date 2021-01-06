@@ -164,7 +164,6 @@ hr {
   opacity: 0;
   width: 60%;
   margin-top: 2em;
-  transform: translateY(20%);
   display: flex;
   justify-content: space-between;
 }

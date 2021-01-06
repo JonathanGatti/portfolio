@@ -12,14 +12,13 @@ tl.fromTo('.header', {opacity: 0}, {opacity: 1, duration: 1}, '-=1')
 // work section animation
 const workSectionAnimations = () => {
   tl.to('.work-title', {x: '0vw', duration: 1.3})
-  tl.to('.work-hr', {x: '0vw', duration: 1.3}, '-=0.2')
+  tl.to('.work-hr', {x: '0vw', duration: 1.3}, '-=0.1')
   tl.to('.work-projects',  {opacity: 1, duration: 1}, '-=1')
-  tl.to('.work-projects', {y: '-20%', duration: 1.3}, '-=1')
 }
 // technology section animations 
 const technologyAnimations = () => {
   tl.to('.tech-title', {x: '0vw', duration: 1.3})
-  tl.to('.tech-hr', {x: '0vw', duration: 1.3}, '-=0.2')
+  tl.to('.tech-hr', {x: '0vw', duration: 1.3}, '-=0.1')
   tl.to('.technologies', {opacity: 1, duration: 1}, '-=1')
 }
 
