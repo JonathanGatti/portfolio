@@ -46,11 +46,12 @@ main {
 nav {
   display: flex;
   align-items: center;
+  background-color: #303542;
   color: lightgray;
-  width: 90vw;
+  width: 100vw;
   margin-left: auto;
   margin-right: auto;
-  justify-content: space-between;
+  justify-content: space-around;
   min-height: 10vh;
 }
 
@@ -71,7 +72,7 @@ nav {
 
 .header {
   color: white;
-  background-color: lightblue;
+  background: url(./background.svg);
   width: 100%;
   height: 100vh;
   display: flex;
@@ -83,12 +84,12 @@ nav {
 
 .work-experience {
   color: rgba(101, 99, 99, 0.462);
-  background-color: lightgreen;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 50vh;
+  height: 80vh;
   font-size: 1.4em;
 }
 .work-projects {
@@ -103,7 +104,8 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 50vh;
+  justify-content: center;
+  height: 80vh;
   font-size: 1.4em;
 }
 
