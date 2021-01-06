@@ -14,11 +14,11 @@ tl.fromTo('.header', {opacity: 0}, {opacity: 1, duration: 1}, '-=1')
 // });
 
 button.addEventListener('mouseenter', () => {
-  document.querySelector('i').className='fas fa-arrow-down';
+  document.querySelector('i').style.transform = 'rotate(90deg)'
 })
 
 button.addEventListener('mouseleave', () => {
-  document.querySelector('i').className='fas fa-arrow-right';
+  document.querySelector('i').style.transform = 'rotate(0deg)'
 })
 
 button.addEventListener('click', () =>{
