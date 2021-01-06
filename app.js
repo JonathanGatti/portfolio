@@ -9,10 +9,7 @@ tl.to('.intro', {y: '-100%', duration: 1})
 tl.fromTo('nav', {opacity: 0}, {opacity: 1, duration: 1})
 tl.fromTo('.header', {opacity: 0}, {opacity: 1, duration: 1}, '-=1')
 
-// window.addEventListener('scroll', function() {
-//   document.querySelector('.header').innerHTML = window.pageYOffset + 'px';
-// });
-
+// buttons event listeners
 button.addEventListener('mouseenter', () => {
   document.querySelector('i').style.transform = 'rotate(90deg)'
 })
@@ -23,6 +20,10 @@ button.addEventListener('mouseleave', () => {
 
 button.addEventListener('click', () =>{
   window.scrollBy(0,750)
+  tl.to('.work-title', {x: '0vw', duration: 1.3})
+  tl.to('.work-hr', {x: '0vw', duration: 1.5}, '-=1')
+  tl.fromTo('.work-projects', {opacity: 0}, {opacity: 1, duration: 1.3}, '-=1')
+  tl.to('.work-projects', {y: '-20%', duration: 1.3}, '-=1')
 })
 
 

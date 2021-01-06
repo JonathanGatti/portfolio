@@ -94,9 +94,8 @@ nav {
 }
 .about-button:hover {
   cursor: pointer;
-  transform: scale(1.1);
-  background-color: rgb(28, 110, 120);
-  border: rgba(101, 99, 99, 0.462);
+  background-color: rgb(50, 169, 151);
+  color: white;
   opacity: 1;
 }
 
@@ -104,19 +103,35 @@ i {
   transition: all ease 0.3s;
 }
 
+.work-title {
+  transform: translateX(-100vw);
+}
+
+.work-hr {
+  transform: translateX(-100vw);
+}
+
 .work-experience {
   color: rgba(101, 99, 99, 0.462);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  margin-top: 2em;
   width: 100%;
   height: 80vh;
   font-size: 1.4em;
 }
+hr {
+  color: black;
+  width: 10vw;
+  height: 5px;
+  background-color: black;
+  border-radius: 20px;
+}
 .work-projects {
   width: 60%;
   margin-top: 2em;
+  transform: translateY(20%);
   display: flex;
   justify-content: space-between;
 }
