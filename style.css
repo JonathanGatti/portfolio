@@ -5,6 +5,7 @@
   font-weight: 400;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  max-width: 100vw;
 }
 
 .intro {
@@ -104,7 +105,6 @@ i {
 }
 
 .technologies-container {
-  background-color: lightsteelblue;
   height: 50vh;
   display: flex;
   flex-direction: column;
@@ -150,7 +150,7 @@ i {
   align-items: center;
   margin-top: 2em;
   width: 100%;
-  height: 60vh;
+  height: 40vh;
   font-size: 1.4em;
 }
 hr {
@@ -169,17 +169,30 @@ hr {
 }
 
 .personal-projects {
-  background-color: lightslategray;
+  background-color: rgb(237, 237, 237);
+  color: rgba(101, 99, 99, 0.462);
+  margin-top: 3em;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 80vh;
+  height: 60vh;
   font-size: 1.4em;
 }
 
 .projects {
   margin-top: 2em;
   width: 80%;
+  height: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-title {
+  color: red;
+  position: absolute;
+}
+img {
+  max-width: 100%;
 }
