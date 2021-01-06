@@ -103,6 +103,29 @@ i {
   transition: all ease 0.3s;
 }
 
+.technologies-container {
+  background-color: lightsteelblue;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4em;
+}
+.technologies {
+  margin-top: 3em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.technology {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .work-title {
   transform: translateX(-100vw);
 }
@@ -129,6 +152,7 @@ hr {
   border-radius: 20px;
 }
 .work-projects {
+  opacity: 0;
   width: 60%;
   margin-top: 2em;
   transform: translateY(20%);
