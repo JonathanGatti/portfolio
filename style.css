@@ -113,6 +113,7 @@ i {
   font-size: 1.4em;
 }
 .technologies {
+  opacity: 0;
   margin-top: 3em;
   width: 100%;
   display: flex;
@@ -126,12 +127,20 @@ i {
   align-items: center;
 }
 
+.tech-title {
+  transform: translateX(100vw);
+}
+
 .work-title {
   transform: translateX(-100vw);
 }
 
 .work-hr {
   transform: translateX(-100vw);
+}
+
+.tech-hr {
+  transform: translateX(100vw);
 }
 
 .work-experience {
@@ -141,7 +150,7 @@ i {
   align-items: center;
   margin-top: 2em;
   width: 100%;
-  height: 80vh;
+  height: 60vh;
   font-size: 1.4em;
 }
 hr {
