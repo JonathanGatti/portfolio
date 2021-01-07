@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./styles/style.css">
 
   <title>Jonathan Gatti</title>
 </head>
@@ -23,7 +23,7 @@
       <div>
         <h2 >Jonathan Gatti</h2>
         <p>JavaScript and React developer</p>
-        <button class='about-button'>My Experience <i class="fas fa-arrow-right"></i></button>
+        <button class='about-button'>My Experience <i id ='arrow' class="fas fa-arrow-right"></i></button>
       </div>
     </div>
     <div class="technologies-container">
@@ -31,26 +31,6 @@
       <hr class='tech-hr'/> 
 
       <div class='technologies'>
-        <div class='technology'>
-          <i class="fab fa-html5 fa-5x"></i>
-          HTML5
-        </div>
-        <div class='technology'>
-          <i class="fab fa-css3-alt fa-5x"></i>
-          CSS3
-        </div>
-        <div class='technology'>
-          <i class="fab fa-js-square fa-5x"></i>
-          JavaScript
-        </div>
-        <div class='technology'>
-          <i class="fab fa-react fa-5x"></i>
-          React
-        </div>
-        <div class='technology'>
-          <i class="fab fa-node-js fa-5x"></i>
-          Node.js
-        </div>
       </div>
     </div>
     <div class="work-experience">
@@ -95,11 +75,13 @@
       <h1 class='hide'> <span class='text'>Web Developer</span></h1>
     </div>
   </div>
+
   <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
       integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
       crossorigin="anonymous"
     ></script>
-    <script src="./app.js"></script>
+    <script src="./app.js" type='module'></script>
+
 </body>
 </html>
