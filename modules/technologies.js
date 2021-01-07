@@ -1,4 +1,5 @@
-const tl = gsap.timeline({defaults: {ease: 'power1.out'}});
+import {tl} from './timeline.js';
+
 const technologies = [
   {
     icon: 'fab fa-html5 fa-5x',

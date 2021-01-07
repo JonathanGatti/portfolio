@@ -23,12 +23,37 @@ const renderProjects = () => {
     title.innerHTML = project.title;
     title.className= 'project-title'
     let img = document.createElement('img');
+    img.className = 'project-img'
     img.src = project.imgSrc;
     div.appendChild(title);
     div.appendChild(img);
     container.appendChild(div)
   })
+  projectAnimations()
+
   return container;
 }
+
+//project animations
+const projectAnimations = () => {
+    let imgs = document.querySelectorAll('.project-img')
+    let arr = [...imgs]
+    arr.map(img => {
+      img.addEventListener('mouseenter', () => {
+        let titles = [...document.querySelectorAll('.project-title')]
+        titles.map(title => {
+          title.style.transform = 'translateY(100px)'
+        })
+      })
+      img.addEventListener('mouseleave', () => {
+        let titles = [...document.querySelectorAll('.project-title')]
+        titles.map(title => {
+          title.style.transform = 'translateY(0px)'
+        })
+      })
+    })
+}
+
+
 
 export {renderProjects};

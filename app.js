@@ -1,7 +1,7 @@
 import {renderTechnologies, technologyAnimations} from './modules/technologies.js';
 import {renderProjects} from './modules/projects.js';
+import {tl} from './modules/timeline.js';
 
-const tl = gsap.timeline({defaults: {ease: 'power1.out'}});
 const header = document.querySelector('.header');
 const work = document.querySelector('.work-experience');
 const button = document.querySelector('.about-button');

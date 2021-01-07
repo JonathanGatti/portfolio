@@ -191,7 +191,9 @@ hr {
 
 .project-title {
   color: red;
-  position: absolute;
+  position: relative;
+  text-align: center;
+  transform: translateY(100%);
 }
 img {
   max-width: 100%;
