@@ -1,4 +1,5 @@
- const technologies = [
+const tl = gsap.timeline({defaults: {ease: 'power1.out'}});
+const technologies = [
   {
     icon: 'fab fa-html5 fa-5x',
     name: 'HTML5'
@@ -21,7 +22,7 @@
   }
 ]
 
-function renderTechnologies() {
+const  renderTechnologies = () => {
   let container = document.querySelector('.technologies');
 
   technologies.map(tech => {
@@ -37,5 +38,11 @@ function renderTechnologies() {
   })
   return container
 }
-export {renderTechnologies}
+
+const technologyAnimations = () => {
+  tl.to('.tech-title', {x: '0vw', duration: 1.3})
+  tl.to('.tech-hr', {x: '0vw', duration: 1.3}, '-=0.1')
+  tl.to('.technologies', {opacity: 1, duration: 1}, '-=1')
+}
+export {renderTechnologies, technologyAnimations}
  

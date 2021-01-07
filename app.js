@@ -1,4 +1,5 @@
-import {renderTechnologies} from './technologies.js';
+import {renderTechnologies, technologyAnimations} from './modules/technologies.js';
+import {renderProjects} from './modules/projects.js';
 
 const tl = gsap.timeline({defaults: {ease: 'power1.out'}});
 const header = document.querySelector('.header');
@@ -17,13 +18,6 @@ const workSectionAnimations = () => {
   tl.to('.work-hr', {x: '0vw', duration: 1.3}, '-=0.1')
   tl.to('.work-projects',  {opacity: 1, duration: 1}, '-=1')
 }
-// technology section animations 
-const technologyAnimations = () => {
-  tl.to('.tech-title', {x: '0vw', duration: 1.3})
-  tl.to('.tech-hr', {x: '0vw', duration: 1.3}, '-=0.1')
-  tl.to('.technologies', {opacity: 1, duration: 1}, '-=1')
-}
-
 
 // button event listeners
 button.addEventListener('mouseenter', () => {
@@ -47,5 +41,6 @@ document.addEventListener('scroll', () => {
 
 // render technologies
 document.querySelector('.technologies-container').appendChild(renderTechnologies())
+document.querySelector('.personal-projects').appendChild(renderProjects())
 
 
