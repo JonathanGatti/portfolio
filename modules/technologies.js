@@ -33,8 +33,7 @@ const  renderTechnologies = () => {
     name.innerHTML = tech.name;
     let div = document.createElement('div')
     div.className='technology';
-    div.appendChild(icon)
-    div.appendChild(name)
+    div.append(icon, name)
     container.appendChild(div)
   })
   return container

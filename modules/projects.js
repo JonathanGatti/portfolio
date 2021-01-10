@@ -1,3 +1,5 @@
+import {tl} from './timeline.js';
+
 const projects = [
   {
     title: 'The Football App',
@@ -25,33 +27,20 @@ const renderProjects = () => {
     let img = document.createElement('img');
     img.className = 'project-img'
     img.src = project.imgSrc;
-    div.appendChild(title);
-    div.appendChild(img);
+    div.append(title, img);
     container.appendChild(div)
+
+    img.addEventListener('mouseenter', () => {
+      title.style.transform = 'translateY(150px)'
+      title.style.opacity = 1
+    })
+    img.addEventListener('mouseleave', () => {
+      title.style.transform = 'translateY(0)';
+      title.style.opacity = 0;
+    })
   })
-  projectAnimations()
 
   return container;
-}
-
-//project animations
-const projectAnimations = () => {
-    let imgs = document.querySelectorAll('.project-img')
-    let arr = [...imgs]
-    arr.map(img => {
-      img.addEventListener('mouseenter', () => {
-        let titles = [...document.querySelectorAll('.project-title')]
-        titles.map(title => {
-          title.style.transform = 'translateY(100px)'
-        })
-      })
-      img.addEventListener('mouseleave', () => {
-        let titles = [...document.querySelectorAll('.project-title')]
-        titles.map(title => {
-          title.style.transform = 'translateY(0px)'
-        })
-      })
-    })
 }
 
 
