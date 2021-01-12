@@ -40,8 +40,8 @@ const  renderTechnologies = () => {
 }
 
 const technologyAnimations = () => {
-  tl.to('.tech-title', {x: '0vw', duration: 1.3})
-  tl.to('.tech-hr', {x: '0vw', duration: 1.3}, '-=0.1')
+  tl.to('.tech-title', {x: '0vw', duration: 1.2})
+  tl.to('.tech-hr', {x: '0vw', duration: 1}, '-=0.1')
   tl.to('.technologies', {opacity: 1, duration: 1}, '-=1')
 }
 export {renderTechnologies, technologyAnimations}

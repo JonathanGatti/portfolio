@@ -14,8 +14,8 @@ tl.fromTo('.header', {opacity: 0}, {opacity: 1, duration: 1}, '-=1')
 
 // work section animations
 const workSectionAnimations = () => {
-  tl.to('.work-title', {x: '0vw', duration: 1.3})
-  tl.to('.work-hr', {x: '0vw', duration: 1.3}, '-=0.1')
+  tl.to('.work-title', {x: '0vw', duration: 1.2})
+  tl.to('.work-hr', {x: '0vw', duration: 1}, '-=0.1')
   tl.to('.work-projects',  {opacity: 1, duration: 1}, '-=1')
 }
 

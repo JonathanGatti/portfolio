@@ -202,7 +202,12 @@ hr {
   transform: translateY(100%);
   background-color: white;
   border: 2px solid black;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.links-container {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
 }
 
 .project-link {
@@ -210,11 +215,9 @@ hr {
   background-color: white;
   border: 2px solid black;
   padding: 10px 20px;
-  opacity: 0;
-  transition: all 0.5s ease-in-out;
 }
 img {
   max-width: 400px;
   max-height: 400px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
