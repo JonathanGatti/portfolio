@@ -42,6 +42,7 @@ body {
 main {
   width: 100vw;
   height: 100vw;
+  color: rgb(48, 48, 48);
 }
 
 nav {
@@ -53,7 +54,7 @@ nav {
   margin-left: auto;
   margin-right: auto;
   justify-content: space-around;
-  min-height: 10vh;
+  min-height: 5vh;
 }
 
 .nav-links {
@@ -64,6 +65,12 @@ nav {
 .nav-links li {
   padding-left: 8rem;
   font-size: 1.2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: lightgray;
+  font-weight: 200;
 }
 
 #logo {
@@ -153,10 +160,9 @@ i {
   font-size: 1.4em;
 }
 hr {
-  color: black;
   width: 10vw;
   height: 5px;
-  background-color: black;
+  background-color: rgb(48, 48, 48);
   border-radius: 20px;
 }
 .work-projects {
@@ -187,6 +193,7 @@ hr {
   align-items: center;
 }
 .project {
+  height: 20vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -203,7 +210,6 @@ hr {
   color: rgb(50, 169, 151);
 }
 .title-container h3 {
-  color: black;
   font-size: bold;
 }
 
@@ -215,6 +221,7 @@ hr {
 .project-link {
   text-decoration: none;
   border: 2px solid rgb(50, 169, 151);
+  border-radius: 8px;
   padding: 10px 30px;
   color: black;
   font-size: 18px;
