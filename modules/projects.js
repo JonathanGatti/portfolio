@@ -36,8 +36,8 @@ const renderProjects = () => {
     div.append(title, img, link);
     container.appendChild(div)
 
-    img.addEventListener('mouseenter', () => onMouseEnter(title, img, link))
-    img.addEventListener('mouseleave', () => onMouseLeave(title, img, link))
+    div.addEventListener('mouseenter', () => onMouseEnter(title, img, link))
+    div.addEventListener('mouseleave', () => onMouseLeave(title, img, link))
   })
 
   return container;
