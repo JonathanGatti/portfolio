@@ -85,6 +85,7 @@ nav {
 }
 
 .about-button {
+  text-decoration: none;
   background-color: transparent;
   border: 2px solid white;
   color: lightslategray;
