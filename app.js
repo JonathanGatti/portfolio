@@ -29,14 +29,13 @@ button.addEventListener('mouseleave', () => {
 })
 
 button.addEventListener('click', () =>{
-  window.scrollBy(0,750)
-  technologyAnimations()
   workSectionAnimations()
+  technologyAnimations()
 })
 
 document.addEventListener('scroll', () => {
-  technologyAnimations()
   workSectionAnimations()
+  technologyAnimations()
 })
 
 // render technologies

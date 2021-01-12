@@ -71,6 +71,7 @@ nav {
   text-decoration: none;
   color: lightgray;
   font-weight: 200;
+  letter-spacing: 0.2rem;
 }
 
 #logo {
@@ -81,6 +82,7 @@ nav {
 .header {
   color: white;
   background: url(./background.svg);
+  /* background by SVGBackgrounds.com */
   width: 100%;
   height: 100vh;
   display: flex;
@@ -175,25 +177,23 @@ hr {
 
 .personal-projects {
   background-color: rgb(237, 237, 237);
-  margin-top: 3em;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 60vh;
+  height: 100vh;
   font-size: 1.4em;
 }
 
 .projects {
-  margin-top: 2em;
-  width: 80%;
-  height: 100%;
+  width: 100%;
+  height: 70vh;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 .project {
-  height: 20vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -232,7 +232,7 @@ hr {
   transition: all 0.3s ease-in-out;
 }
 img {
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 450px;
+  max-height: 450px;
   transition: all 0.5s ease-in-out;
 }

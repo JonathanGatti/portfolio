@@ -18,7 +18,7 @@ export const projects = [
     imgSrc: 'https://images.unsplash.com/photo-1553964125-e03d833522b2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzh8fHdlYiUyMGZyYW1ld29ya3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
     href: 'https://jonathangatti.github.io/football-app-v3/#/',
     codeUrl: 'https://github.com/JonathanGatti/football-app-v3',
-    tech: 'React.js/TypeScript' 
+    tech: 'TypeScript' 
   },
 ]
 
