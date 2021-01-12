@@ -1,15 +1,13 @@
 import {projects} from '../utils/projects.js';
 import {createLinksContainer} from '../utils/createLinksContainer.js';
-
+import {createProjectTitle} from '../utils/createProjectTitle.js';
 
 const renderProjects = () => {
   const container = document.querySelector('.projects');
   projects.map(project => {
     let div = document.createElement('div');
     div.className = 'project';
-    let title = document.createElement('h3');
-    title.innerHTML = project.title;
-    title.className= 'project-title'
+    let title = createProjectTitle(project);
     let img = document.createElement('img');
     img.className = 'project-img'
     img.src = project.imgSrc;

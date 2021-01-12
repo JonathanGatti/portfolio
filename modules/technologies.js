@@ -1,7 +1,6 @@
 import {tl} from './timeline.js';
 import {technologies} from '../utils/technologies.js'
 
-
 const  renderTechnologies = () => {
   let container = document.querySelector('.technologies');
 
