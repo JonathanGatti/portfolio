@@ -69,6 +69,10 @@ nav a {
   text-decoration: none;
   color: white;
   font-weight: lighter;
+  transition: all 0.2s ease-in-out;
+}
+nav a:hover {
+  color: rgb(50, 169, 151);
 }
 
 .nav-icons {
@@ -110,6 +114,12 @@ nav a {
   opacity: 1;
 }
 
+.divider {
+  width: 100%;
+  height: 5px;
+  background-color: rgb(50, 169, 151);
+}
+
 i {
   transition: all ease 0.3s;
 }
@@ -148,7 +158,7 @@ i {
 }
 hr {
   width: 10vw;
-  background-color: rgb(48, 48, 48);
+  color: rgb(50, 169, 151);
 }
 .work-projects {
   width: 60%;
@@ -175,7 +185,7 @@ hr {
 
 .projects {
   width: 100%;
-  height: 70vh;
+  height: 60vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -186,6 +196,14 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.projects-tech {
+  margin-top: 1rem;
+  color: rgb(50, 169, 151);
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
 }
 .title-container {
   opacity: 0;
