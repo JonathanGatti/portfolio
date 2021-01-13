@@ -6,7 +6,6 @@ const renderWorkExperience = () => {
   workExperience.map(work => {
     let div = createWorkExperience(work);
     container.append(div)
-    console.log(div.children[1])
     div.addEventListener('mouseenter', () => onMouseEnter(div.children[1]))
     div.addEventListener('mouseleave', () => onMouseLeave(div.children[1]))
   })
