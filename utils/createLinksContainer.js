@@ -5,10 +5,12 @@ export const createLinksContainer = (project) => {
   link.innerText = 'link';
   link.className = 'project-link';
   link.href = project.href;
+  link.setAttribute('target', 'blank')
   let code = document.createElement('a');
   code.innerText = 'code';
   code.className = 'project-link';
   code.href = project.codeUrl;
+  code.setAttribute('target', 'blank')
   linksContainer.append(link, code)
   return linksContainer;
 }
