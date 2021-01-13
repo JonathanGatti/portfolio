@@ -123,7 +123,6 @@ i {
   font-size: 1.4em;
 }
 .technologies {
-  opacity: 0;
   margin-top: 3em;
   width: 100%;
   display: flex;
@@ -137,22 +136,6 @@ i {
   align-items: center;
 }
 
-.tech-title {
-  transform: translateX(100vw);
-}
-
-.work-title {
-  transform: translateX(-100vw);
-}
-
-.work-hr {
-  transform: translateX(-100vw);
-}
-
-.tech-hr {
-  transform: translateX(100vw);
-}
-
 .work-experience {
   display: flex;
   flex-direction: column;
@@ -164,16 +147,19 @@ i {
 }
 hr {
   width: 10vw;
-  height: 5px;
   background-color: rgb(48, 48, 48);
-  border-radius: 20px;
 }
 .work-projects {
-  opacity: 0;
   width: 60%;
-  margin-top: 2em;
+  margin-top: 1.5em;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+}
+
+.work-project {
+  margin-top: 2em;
+  border-left: 2px solid rgb(48, 48, 48);
+  padding-left: 0.5em;
 }
 
 .personal-projects {
@@ -209,9 +195,6 @@ hr {
 }
 .title-container h5 {
   color: rgb(50, 169, 151);
-}
-.title-container h3 {
-  font-size: bold;
 }
 
 .links-container {

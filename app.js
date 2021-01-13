@@ -1,4 +1,5 @@
 import {renderTechnologies, technologyAnimations} from './modules/technologies.js';
+import {renderWorkExperience} from './modules/work.js';
 import {renderProjects} from './modules/projects.js';
 import {tl} from './modules/timeline.js';
 
@@ -28,18 +29,11 @@ button.addEventListener('mouseleave', () => {
   document.querySelector('#arrow').style.transform = 'rotate(0deg)'
 })
 
-button.addEventListener('click', () =>{
-  workSectionAnimations()
-  technologyAnimations()
-})
 
-document.addEventListener('scroll', () => {
-  workSectionAnimations()
-  technologyAnimations()
-})
 
 // render technologies
-document.querySelector('.technologies-container').appendChild(renderTechnologies())
-document.querySelector('.personal-projects').appendChild(renderProjects())
+document.querySelector('.technologies-container').appendChild(renderTechnologies());
+document.querySelector('.personal-projects').appendChild(renderProjects());
+renderWorkExperience();
 
 
