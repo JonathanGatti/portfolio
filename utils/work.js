@@ -2,7 +2,7 @@ export const workExperience = [
   {
     employer: 'Brains & Brawn Studio',
     position: 'Junior React Developer',
-    description: 'Contributed to the development of a web platform, using various technologies and languages such as React.js and Typescript',
+    description: 'Contributing to the development of a web platform, using various technologies and languages such as React.js and Typescript',
     dates: 'october 2020 / present'
   },
   {
