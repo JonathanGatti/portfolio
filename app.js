@@ -1,10 +1,8 @@
-import {renderTechnologies, technologyAnimations} from './modules/technologies.js';
+import {renderTechnologies} from './modules/technologies.js';
 import {renderWorkExperience} from './modules/work.js';
 import {renderProjects} from './modules/projects.js';
 import {tl} from './modules/timeline.js';
 
-const header = document.querySelector('.header');
-const work = document.querySelector('.work-experience');
 const button = document.querySelector('.about-button');
 
 // intro animations
@@ -30,10 +28,9 @@ button.addEventListener('mouseleave', () => {
 })
 
 
-
-// render technologies
-document.querySelector('.technologies-container').appendChild(renderTechnologies());
-document.querySelector('.personal-projects').appendChild(renderProjects());
+// render modules
+renderTechnologies();
+renderProjects();
 renderWorkExperience();
 
 
