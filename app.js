@@ -27,10 +27,10 @@ button.addEventListener('mouseleave', () => {
   document.querySelector('#arrow').style.transform = 'rotate(0deg)'
 })
 
-
 // render modules
-renderTechnologies();
 renderProjects();
 renderWorkExperience();
+renderTechnologies();
+
 
 
