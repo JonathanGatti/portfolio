@@ -1,10 +1,14 @@
-import {projects} from '../utils/projects.js';
+import {javascript, react, typeScript} from '../utils/projects.js';
 import {createLinksContainer} from '../utils/createLinksContainer.js';
 import {createProjectTitle} from '../utils/createProjectTitle.js';
 
 const renderProjects = () => {
   const container = document.querySelector('.projects');
-  projects.map(project => {
+  buildProjectSection(container, javascript)
+}
+
+const buildProjectSection = (container, type) => {
+  type.map(project => {
     let div = document.createElement('div');
     div.className = 'project';
     let title = createProjectTitle(project);
@@ -18,9 +22,8 @@ const renderProjects = () => {
     div.addEventListener('mouseenter', () => onMouseEnter(title, img, linksContainer))
     div.addEventListener('mouseleave', () => onMouseLeave(title, img, linksContainer))
   })
-
-  return container;
 }
+
 
 //projects  animations
 const onMouseEnter = (title, img, linksContainer) => {
