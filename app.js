@@ -5,11 +5,11 @@ import {tl} from './modules/timeline.js';
 
 const button = document.querySelector('.about-button');
 
-// intro animations
-tl.to('.text', {y: '0%', duration: 1, stagger: 0.25})
-tl.to('.intro', {y: '-100%', duration: 1})
-tl.fromTo('nav', {opacity: 0}, {opacity: 1, duration: 1})
-tl.fromTo('.header', {opacity: 0}, {opacity: 1, duration: 1}, '-=1')
+// // intro animations
+// tl.to('.text', {y: '0%', duration: 1, stagger: 0.25})
+// tl.to('.intro', {y: '-100%', duration: 1})
+// tl.fromTo('nav', {opacity: 0}, {opacity: 1, duration: 1})
+// tl.fromTo('.header', {opacity: 0}, {opacity: 1, duration: 1}, '-=1')
 
 // work section animations
 const workSectionAnimations = () => {
