@@ -169,7 +169,7 @@ hr {
 }
 
 .work-project {
-  width: 80vw;
+  width: 70vw;
   margin-top: 2em;
   border-left: 2px solid rgb(48, 48, 48);
   padding-left: 0.5em;
@@ -230,7 +230,14 @@ hr {
 
 .hidden {
   opacity: 0;
+  width: 60%;
   transition: all 0.3s ease-in-out;
+}
+
+.hidden span {
+  font-style: oblique;
+  font-size: 18px;
+  color: rgb(50, 169, 151);
 }
 
 .project-link {

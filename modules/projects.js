@@ -1,4 +1,4 @@
-import {javascript, react, typeScript} from '../utils/projects.js';
+import {javascript} from '../utils/projects.js';
 import {createLinksContainer} from '../utils/createLinksContainer.js';
 import {createProjectTitle} from '../utils/createProjectTitle.js';
 

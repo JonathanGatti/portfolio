@@ -10,8 +10,12 @@ const createWorkExperience = (work) => {
     subTitle.style.color = 'rgb(50, 169, 151)';
     titleContainer.append(title, subTitle)
     let description = document.createElement('div');
-    description.innerHTML = work.description;
     description.className = 'hidden';
+    let desc = document.createElement('p');
+    desc.innerHTML = work.description;
+    let dates = document.createElement('span');
+    dates.innerHTML = work.dates;
+    description.append(desc, dates)
     div.append(titleContainer, description)
 
     return div;
