@@ -254,8 +254,8 @@ hr {
   transition: all 0.3s ease-in-out;
 }
 img {
-  max-width: 450px;
-  max-height: 450px;
+  width: 450px;
+  max-height: 300px;
   transition: all 0.5s ease-in-out;
 }
 
