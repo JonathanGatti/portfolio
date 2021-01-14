@@ -3,6 +3,13 @@ import {renderWorkExperience} from './modules/work.js';
 import {renderProjects} from './modules/projects.js';
 
 const button = document.querySelector('.about-button');
+const header = document.querySelector('.header-text');
+
+const headerAnimation = () => {
+  header.style.opacity = 1;
+}
+
+window.onLoad = headerAnimation()
 
 // button event listeners
 button.addEventListener('mouseenter', () => {
