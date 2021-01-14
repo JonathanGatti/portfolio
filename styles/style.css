@@ -20,6 +20,7 @@ main {
   color: rgb(48, 48, 48);
 }
 
+/* nav styles  */
 nav {
   width: 100vw;
   height: 5vh;
@@ -59,6 +60,19 @@ nav a:hover {
   align-items: center;
 }
 
+.hamburger {
+  background-color: transparent;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  margin-left: 2em;
+  transition: all 0.3s ease-in-out;
+}
+.hamburger:hover {
+  color: rgb(50, 169, 151);
+}
+
+/* header Styles */
 .header {
   color: white;
   background: url('https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
@@ -126,12 +140,6 @@ i {
   justify-content: space-evenly;
 }
 
-@media (max-width: 812px) {
-  .technologies-container {
-    display: none;
-  }
-}
-
 .technology {
   display: flex;
   flex-direction: column;
@@ -178,33 +186,6 @@ hr {
   justify-content: center;
   height: 100vh;
   font-size: 1.4em;
-}
-
-@media (max-width: 1024px) {
-  .personal-projects {
-    height: 100%;
-    overflow: scroll;
-  }
-}
-
-@media (max-width: 1024px) {
-  .work-experience {
-    overflow: scroll;
-  }
-}
-
-@media (max-width: 414px) {
-  .work-experience {
-    overflow: scroll;
-  }
-  .work-projects {
-    width: 360px;
-  }
-  .work-project {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
 }
 
 .projects {
@@ -295,7 +276,8 @@ img {
   color: white;
 }
 
-@media (max-width: 740px) {
+/* media queries  */
+@media screen and (max-width: 768px) {
   .contact {
     position: relative;
     overflow: scroll;
@@ -303,5 +285,56 @@ img {
   }
   .contact-header {
     width: 85%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgb(48, 48, 48);
+  }
+  .nav-links.show {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .personal-projects {
+    height: 100%;
+    overflow: scroll;
+  }
+  .work-experience {
+    overflow: scroll;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .work-experience {
+    overflow: scroll;
+  }
+  .work-projects {
+    width: 360px;
+  }
+  .work-project {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 812px) {
+  .technologies-container {
+    display: none;
+  }
+  .nav-icons {
+    width: 40%;
   }
 }
