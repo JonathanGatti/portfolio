@@ -7,18 +7,18 @@ export const javascript = [
     tech: 'React.js/TypeScript' 
   },
   {
-    title: 'Color App',
-    imgSrc:'https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80',
-    href: 'https://jonathangatti.github.io/color-app/',
-    codeUrl: 'https://github.com/JonathanGatti/color-app',
+    title: 'Jayne Selvaggio',
+    imgSrc:'https://images.unsplash.com/photo-1560170505-43f55e57739d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8bGFtcHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    href: 'https://jonathangatti.github.io/gianna-selvaggia/',
+    codeUrl: 'https://github.com/JonathanGatti/gianna-selvaggia',
     tech: 'React.js' 
   },
   {
-    title: 'Web Framework',
-    imgSrc: 'https://images.unsplash.com/photo-1553964125-e03d833522b2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzh8fHdlYiUyMGZyYW1ld29ya3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-    href: 'https://github.com/JonathanGatti/web-framework',
-    codeUrl: 'https://github.com/JonathanGatti/web-framework',
-    tech: 'TypeScript' 
+    title: 'Bug Track (work in progress)',
+    imgSrc: 'https://images.unsplash.com/photo-1536427824649-fbf2e4a33d40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
+    href: 'https://github.com/JonathanGatti/bug-track',
+    codeUrl: 'https://github.com/JonathanGatti/bug-track',
+    tech: 'React.js/TypeScript' 
   },
 ]
 
